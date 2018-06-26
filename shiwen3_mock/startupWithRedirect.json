@@ -1,0 +1,31 @@
+[
+  {
+  "description":"第一个重定向",
+    "request":{
+      "uri":"/redirect"
+    },
+    "redirectTo":"http://www.baidu.com"
+
+  },
+  {
+    "description":"第2个重定向",
+    "request":{
+      "uri":"/redirect2"
+    },
+    "redirectTo":"/redirect/new"
+
+  },
+  {
+    "description":"第3个重定向",
+    "request":{
+      "uri":"/redirect/new"
+    },
+    "response": {
+      "text": "重定向页面结果",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+
+  }
+]

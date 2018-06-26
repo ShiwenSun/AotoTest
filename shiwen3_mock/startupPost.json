@@ -1,0 +1,35 @@
+[
+  {
+    "description": "这是一个无参数的post请求mock",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post"
+    },
+    "response": {
+      "text": "这是一个无参post请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "这是一个带参数的post请求mock",
+    "request": {
+      "uri": "/postwithparam",
+      "method": "post",
+      "forms":{
+        "name":"huhansan",
+        "age":"18"
+      }
+    },
+    "response": {
+      "text": "这是一个有参post请求",
+
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  }
+
+
+]

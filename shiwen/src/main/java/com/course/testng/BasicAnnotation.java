@@ -36,7 +36,7 @@ public class BasicAnnotation {
         System.out.println("BeforeClass在类之后运行");
 
     }
-//
+
     @BeforeSuite
     public  void  BeforeSuite(){
         System.out.println("BeforeSuite");

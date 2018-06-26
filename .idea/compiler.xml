@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shiwen2" />
+        <module name="shiwen2_listeners" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="shiwen" target="1.5" />
-      <module name="shiwen2" target="1.5" />
+      <module name="shiwen2_listeners" target="8" />
+      <module name="shiwen_tag" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

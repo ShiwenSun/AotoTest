@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AotoTest.iml" filepath="$PROJECT_DIR$/.idea/AotoTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shiwen/shiwen.iml" filepath="$PROJECT_DIR$/shiwen/shiwen.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shiwen2/shiwen2.iml" filepath="$PROJECT_DIR$/shiwen2/shiwen2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiwen2/shiwen2_listeners.iml" filepath="$PROJECT_DIR$/shiwen2/shiwen2_listeners.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiwen/shiwen_tag.iml" filepath="$PROJECT_DIR$/shiwen/shiwen_tag.iml" />
     </modules>
   </component>
 </project>
