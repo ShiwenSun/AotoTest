@@ -10,6 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>../shiwen2</module>
+        <module>shiwen3</module>
+        <module>../shiwen4</module>
     </modules>
     <dependencies>
         <dependency>

@@ -1,18 +1,19 @@
 [
   {
-    "description":"这是一个会返回cookies信息的get请求",
-    "request":{
-      "uri":"/getCookies",
-      "method":"get"
+    "description": "这是一个会返回cookies信息的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
     },
-    "response":{
-      "cookies":{
-        "login":"true"
+    "response": {
+      "cookies": {
+        "login": "true"
       },
-      "text":"恭喜你获得cookies信息成功"
+      "text": "恭喜你获得cookies信息成功",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
     }
-
-
   },
 
 
@@ -26,7 +27,10 @@
       }
     },
     "response":{
-      "text":"这是一个需要携带cookies信息才能访问的get请求"
+      "text":"这是一个需要携带cookies信息才能访问的get请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
     }
   },
   {

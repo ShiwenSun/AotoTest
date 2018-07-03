@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shiwen2_listeners" />
+        <module name="shiwen4" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="shiwen2_listeners" target="8" />
-      <module name="shiwen_tag" target="8" />
+      <module name="shiwen2_listeners" target="1.5" />
+      <module name="shiwen4" target="1.5" />
+      <module name="shiwen_tag" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

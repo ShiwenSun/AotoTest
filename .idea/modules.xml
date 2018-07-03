@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AotoTest.iml" filepath="$PROJECT_DIR$/.idea/AotoTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiwen2/shiwen2_listeners.iml" filepath="$PROJECT_DIR$/shiwen2/shiwen2_listeners.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiwen4/shiwen4.iml" filepath="$PROJECT_DIR$/shiwen4/shiwen4.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiwen/shiwen_tag.iml" filepath="$PROJECT_DIR$/shiwen/shiwen_tag.iml" />
     </modules>
   </component>
