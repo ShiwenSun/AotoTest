@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="shiwen2_listeners" target="1.5" />
-      <module name="shiwen4" target="1.5" />
+      <module name="shiwen4" target="6" />
       <module name="shiwen_tag" target="1.5" />
     </bytecodeTargetLevel>
   </component>

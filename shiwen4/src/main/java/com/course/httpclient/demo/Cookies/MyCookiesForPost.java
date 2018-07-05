@@ -44,7 +44,7 @@ public class MyCookiesForPost {
         for (Cookie cookie : cookieList) {
             String name = cookie.getName();
             String value = cookie.getValue();
-            System.out.println("name:" + name + "value:" + value);
+            System.out.println("name:" + name + "\nvalue:" + value);
         }
     }
 

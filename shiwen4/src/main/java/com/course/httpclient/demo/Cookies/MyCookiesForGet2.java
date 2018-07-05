@@ -14,63 +14,54 @@ import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class MyCookiesForGet {
-    private  String url;
+public class MyCookiesForGet2 {
+    private String url;
     private ResourceBundle bundle;
-    private  CookieStore store;
+    private CookieStore store;
     @BeforeTest
-    public  void  beforeTest(){
-        //读取配置文件的方法
+    public void  beforeTest(){
         bundle = ResourceBundle.getBundle("application",Locale.CHINA);
-        url=bundle.getString("test.url");
-        //System.out.println(url);
+         url = bundle.getString("test.url");
     }
 
     @Test
-    public  void  testGetCookies() throws IOException {
-        String result;
+    public  void  GetCookies() throws IOException {
         String uri = bundle.getString("getCookies.uri");
-        //从配置文件中 拼接测试的url
         String testUrl = url + uri;
-        //        测试逻辑代码书写
         HttpGet get = new HttpGet(testUrl);
         DefaultHttpClient client = new DefaultHttpClient();
         HttpResponse response = client.execute(get);
-        result = EntityUtils.toString(response.getEntity(),"utf-8");
+        String result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(result);
 
-        //获取cookies信息
+
+        //获取cookies
         this.store = client.getCookieStore();
-        List<Cookie> cookieList = store.getCookies() ;
-        for (Cookie cookie : cookieList) {
+        List<Cookie> cookieList = store.getCookies();
+        for (Cookie cookie : cookieList){
             String name = cookie.getName();
-            String value = cookie.getValue();
-            System.out.println("cookie name = " + name
-                    + ";  cookie value = " + value);
+            String status = cookie.getValue();
+            System.out.println("name:"+ name + "\nstatus:" + status) ;
         }
+
     }
 
-
-    @Test(dependsOnMethods = "testGetCookies")
-    public  void  testGetWithCookies() throws IOException {
+        @Test(dependsOnMethods = "GetCookies")
+        public  void  GetWithCookies() throws IOException {
         String uri = bundle.getString("test.get.with.cookies");
-        String testUrl = url + uri;
-        String result;
-        DefaultHttpClient  client = new DefaultHttpClient();
-        HttpGet get = new HttpGet(testUrl);
+        String TestUrl = url + uri;
+        HttpGet get = new HttpGet(TestUrl);
+        DefaultHttpClient client = new DefaultHttpClient();
         client.setCookieStore(this.store);
         HttpResponse response = client.execute(get);
-//        result = EntityUtils.toString(response.getEntity(),"utf-8");
-//        System.out.println(result);
+
+
 
         int stateCode = response.getStatusLine().getStatusCode();
-        System.out.println(stateCode);
         if (stateCode == 200){
-            result = EntityUtils.toString(response.getEntity(),"utf-8");
+            String result = EntityUtils.toString(response.getEntity(),"utf-8");
             System.out.println(result);
         }
 
-
-    }
+        }
 }
-
